@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Karla"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <title>Task 1</title>
+  </head>
+  <body>
+    <div class="Container">
+      <div class="Header">
+        <img src="img/cart.png" width="50px" height="50px" />
+        <b>Mari Belanja</b>
+      </div>
+
+      <!-- Default Dynamic Section -->
+      <div id="default-content" class="dynamic-content">
+        <b>Nothing To Show</b>
+      </div>
+      <!-- Dynamic Section 1 -->
+      <div id="celana1" class="dynamic-content display-content">
+        <img src="img/celana1.jpg" width="200px" height="350px" /><br />
+        <h1><b>Celana Bahan</b></h1>
+        <h3>Price = Rp. 50.000,-</h3>
+        <p>
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum." "Lorem ipsum
+          dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+          velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+          mollit anim id est laborum."
+        </p>
+        <button type="submit" class="btn btn-primary">Buy Now</button>
+      </div>
+      <!-- Dynamic Section 2 -->
+      <div id="celana2" class="dynamic-content display-content">
+        <img src="img/celana2.jpg" width="200px" height="350px" /><br />
+        <h1><b>Celana Bahan Casual</b></h1>
+        <h3>Price = Rp. 75.000,-</h3>
+        <p>
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum." "Lorem ipsum
+          dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+          velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+          mollit anim id est laborum."
+        </p>
+        <button type="submit" class="btn btn-primary">Buy Now</button>
+      </div>
+      <!-- Dynamic Section 3 -->
+      <div id="celana3" class="dynamic-content display-content">
+        <img src="img/celana3.jpg" width="200px" height="350px" /><br />
+        <h1><b>Celana Bahan Jeans</b></h1>
+        <h3>Price = Rp. 80.000,-</h3>
+        <p>
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum." "Lorem ipsum
+          dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+          velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+          mollit anim id est laborum."
+        </p>
+        <button type="submit" class="btn btn-primary">Buy Now</button>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript">
+      // Parse the URL parameter
+      function getParameterByName(name, url) {
+        if (!url) url = window.location.href;
+        name = name.replace(/[\[\]]/g, "\\$&");
+        var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+          results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return "";
+        return decodeURIComponent(results[2].replace(/\+/g, " "));
+      }
+      // Give the parameter a variable name
+      var dynamicContent = getParameterByName("dc");
+
+      $(document).ready(function() {
+        // Check if the URL parameter is apples
+        if (dynamicContent == "celana1") {
+          $("#celana1").show();
+        }
+        // Check if the URL parameter is oranges
+        else if (dynamicContent == "celana2") {
+          $("#celana2").show();
+        }
+        // Check if the URL parameter is bananas
+        else if (dynamicContent == "celana3") {
+          $("#celana3").show();
+        }
+        // Check if the URL parmeter is empty or not defined, display default content
+        else {
+          $("#default-content").show();
+        }
+      });
+    </script>
+  </body>
+</html>

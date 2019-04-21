@@ -1,0 +1,59 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.Container {
+  width: 1080px;
+  height: auto;
+  background-color: white;
+  margin: 0 auto;
+}
+
+.Header {
+  width: auto;
+  border-bottom: 2px solid #008080;
+  font-family: "Karla", sans-serif;
+  font-size: 30px;
+  color: #008080;
+}
+
+.display-content img {
+  margin-top: 25px;
+  margin-left: 100px;
+  margin-right: 25px;
+  border: 1px solid;
+  float: left;
+}
+
+.display-content h1 {
+  font-size: 30px;
+}
+
+.display-content h3 {
+  font-size: 15px;
+  color: navy;
+}
+
+.display-content button {
+  float: right;
+}
+
+.dynamic-content {
+  display: none;
+}
+
+.Header img {
+  margin-left: 25px;
+}
+
+.row {
+  margin-top: 25px;
+}
+
+.col-sm-4 img {
+  transition: transform 0.2s;
+}
+
+.col-sm-4 img:hover {
+  transform: scale(1.1);
+}
